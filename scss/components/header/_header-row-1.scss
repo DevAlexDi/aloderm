@@ -1,0 +1,25 @@
+@import "layout/var";
+
+.header-row-1 {
+    background: #F9F9F9;
+    padding: 13px 0;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: none;
+        border-bottom: 1px solid #000;
+        color: #000000;
+    }
+}

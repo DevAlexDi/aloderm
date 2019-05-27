@@ -1,0 +1,116 @@
+@import "layout/var";
+
+.main-slider {
+    position: relative;
+
+    &__item {
+        min-height: 550px;
+        background-position: center;
+        background-size: cover;
+        outline: none;
+    }
+
+    &__slide-1 {
+        min-height: 550px;
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-top: auto;
+        color: #5A5A5A;
+        font-size: 48px;
+        line-height: 58px;
+        font-family: $mus700;
+        margin-bottom: 16px;
+        color: #5A5A5A;
+        
+    }
+
+    &__description {
+        position: relative;  
+        font-size: 24px;
+        color: #5A5A5A;
+        font-family: $mus700;
+        margin-bottom: 30px; 
+    }
+
+    &__description-blue {
+        padding-left: 21px;
+        font-size: 36px;
+        font-family: $mus700; 
+        color: #3DAFCC;
+    }
+
+    &__description-abs {
+        display: block;
+        position: absolute;
+        top: calc(100% - 10px);
+        left: 0;
+        font-size: 18px;
+        line-height: 22px;
+        color: #5A5A5A;
+        font-family: $mus300;
+    }
+
+    .slick-arrow{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #3E4148;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0;
+        z-index: 50;
+
+        &.slick-prev {
+            left: 40px;
+            background-image: url(../img/arrow-left.svg)
+        }
+
+        &.slick-next {
+            right: 40px;
+            background-image: url(../img/arrow-right.svg)
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-height: 15px;
+        display: flex!important;
+        align-items: flex-end;
+        li{
+            padding: 0 4px;
+            button{
+                font-size: 0;
+                border: 0;
+                display: block;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background: rgba(192, 192, 192, 0.9);
+
+            }
+
+            &.slick-active {
+                button{
+                    width: 15px;
+                    height: 15px;
+                    background: linear-gradient(0deg, #3DAFCC, #3DAFCC), linear-gradient(0deg, #3DAFCC, #3DAFCC), #3DAFCC;
+                }
+            }
+        }
+    }
+}

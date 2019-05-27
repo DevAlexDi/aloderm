@@ -1,0 +1,19 @@
+@import "layout/var";
+
+.header-row-3 {
+    padding: 10px 0;
+    background: #3DAFCC;
+    position: relative;
+    z-index: 102;
+
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        text-align: center;
+
+        span{
+            font-family: $mus500;
+        }
+    }
+}

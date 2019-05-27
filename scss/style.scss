@@ -1,0 +1,28 @@
+@import "base/fonts";
+@import "layout/var";
+@import "layout/app";
+//header
+@import "components/header/header-row-1";
+@import "components/header/socials";
+@import "components/header/header-row-2";
+@import "components/header/header-row-3";
+@import "components/header/header-row-4";
+@import "components/header/menu-list";
+//baner
+@import "components/baner/baner";
+@import "components/baner/main-slider";
+@import "components/baner/button-wrapp";
+//consult
+@import "components/consult/consult";
+@import "components/whywe/why-we";
+//services
+@import "components/services/services";
+@import "components/ourworks/our-works";
+//reviews
+@import "components/reviews/reviews";
+//gallery
+@import "components/gallery/gallery";
+//team
+@import "components/team/team";
+//adv
+@import "components/adv/adv";

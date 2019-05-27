@@ -1,0 +1,86 @@
+@import "layout/var";
+
+.adv {
+   margin-bottom: 9px;
+}
+
+.adv-1 {
+    display: block;
+    height: 350px;
+    padding: 7px 7px 7px 0;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/adv1.jpg);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+
+    &__side {
+        &:first-child {
+            width: 43%;
+            padding-right: 30px;
+        }
+        &:last-child {
+            width: 57%;
+        }
+    }
+
+    &__t1 {
+        font-size: 24px;
+        line-height: 29px;
+        font-family: $mus700;
+        margin-bottom: 4px;
+    }
+
+    &__t2 {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        margin-bottom: 4px;
+    }
+
+    &__t3 {
+        display: flex;
+        span{
+            display: block;
+            position: relative;
+        }
+    }
+
+    
+
+    &__t3-price {
+        font-size: 36px;
+        line-height: 43px;
+        color: #fff;
+        font-family: $mus700;
+        padding-right: 15px;
+        margin-right: 15px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 13px;
+            right: 0;
+            width: 13px;
+            height: 20px;
+            background-image: url(../img/rub.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__t4 {
+        font-size: 14px;
+        line-height: 43px;
+        color: #fff;
+    }
+
+    .adv-2 {
+        
+    }
+
+}
