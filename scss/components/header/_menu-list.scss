@@ -7,6 +7,10 @@
    display: flex;
    justify-content: space-between;
 
+   @media (max-width: 767px){
+      display: block;
+   }
+
    &__item {
       position: relative;
 
@@ -25,6 +29,20 @@
       line-height: 19px;
       color: #000;
 
+      &:hover {
+         color: #3DAFCC;
+      }
+
+      @media (max-width: 991px){
+         font-size: 12px;
+         padding: 12px 3px;
+      }
+
+      @media (max-width: 767px){
+         padding: 7px 0;
+         font-size: 14px;
+      }
+
       &--with-arr {
          padding-right: 15px;
 
@@ -41,6 +59,10 @@
             border-top: 4px dashed;
             border-right: 4px solid transparent;
             border-left: 4px solid transparent;
+
+            @media (max-width: 767px){
+               display: none;
+            }
          }
       }
    }
@@ -55,6 +77,15 @@
       padding: 0;
       margin: 0;
       display: none;
+
+      @media (max-width: 767px){
+         position: relative;
+         top: 0;
+         width: 100%;
+         background: #fff;
+
+         
+      }
    }
 
    &__second-lvl-item {
@@ -62,6 +93,10 @@
       &:hover {
          .menu-list__third-lvl{
             display: block;
+
+            @media (max-width: 767px){
+               display: none;
+            }
          }
       }
    }
@@ -71,6 +106,10 @@
       padding: 5px 10px;
       color: #fff;
       font-size: 14px;
+
+      @media (max-width: 767px){
+         color: #000;
+      }
 
       &:hover {
          background: rgb(48, 148, 173);
@@ -87,6 +126,14 @@
       padding: 0;
       margin: 0;
       display: none;
+
+      @media (max-width: 767px){
+         position: relative;
+         top: 0;
+         left: 0;
+         width: 100%;
+         background: #fff;
+      }
    }
 
    &__third-lvl-link {
@@ -94,6 +141,10 @@
       padding: 5px 10px;
       color: #fff;
       font-size: 14px;
+
+      @media (max-width: 767px){
+         color: #000;
+      }
 
       &:hover {
          background: rgb(48, 148, 173);

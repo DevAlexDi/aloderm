@@ -3,4 +3,12 @@
 .baner {
     position: relative;
     padding-top: 73px;
+
+    @media (max-width: 991px){
+        padding-top: 43px;
+    }
+
+    @media (max-width: 767px){
+        padding-top: 0;
+    }
 }

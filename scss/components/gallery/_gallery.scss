@@ -16,6 +16,11 @@
             background-position: center;
             font-size: 0;
             z-index: 50;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #3DAFCC;
+            }
     
             &.slick-prev {
                 right: 94px;
@@ -68,6 +73,14 @@
          height: 598px;
          background-position: center;
          background-size: cover;
+
+         @media (max-width: 991px){
+             height: 390px;
+         }
+
+         @media (max-width: 767px){
+             height: 245px;
+         }
          
      }
 }

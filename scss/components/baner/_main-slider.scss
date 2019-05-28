@@ -8,13 +8,30 @@
         background-position: center;
         background-size: cover;
         outline: none;
+
+        @media (max-width: 991px){
+            min-height: 400px;
+        }
+
+        @media (max-width: 767px){
+            min-height: auto;
+        }
     }
 
     &__slide-1 {
         min-height: 550px;
-        padding: 60px 0;
+        padding: 20px 0 60px 0;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 991px){
+            min-height: 400px;
+        }
+
+        @media (max-width: 767px){
+            min-height: auto;
+            padding-top: 30px;
+         }
     }
 
     &__title {
@@ -25,6 +42,11 @@
         font-family: $mus700;
         margin-bottom: 16px;
         color: #5A5A5A;
+
+        @media (max-width: 767px){
+            line-height: 30px;
+            font-size: 28px;
+        }
         
     }
 
@@ -34,6 +56,11 @@
         color: #5A5A5A;
         font-family: $mus700;
         margin-bottom: 30px; 
+
+        @media (max-width: 767px){
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
     }
 
     &__description-blue {
@@ -41,6 +68,11 @@
         font-size: 36px;
         font-family: $mus700; 
         color: #3DAFCC;
+
+        @media (max-width: 767px){
+            font-size: 19px;
+            padding-left: 5px;
+        }
     }
 
     &__description-abs {
@@ -52,6 +84,10 @@
         line-height: 22px;
         color: #5A5A5A;
         font-family: $mus300;
+
+        @media (max-width: 767px){
+            top: 100%;
+        }
     }
 
     .slick-arrow{
@@ -68,6 +104,12 @@
         background-position: center;
         font-size: 0;
         z-index: 50;
+
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #3DAFCC;
+        }
 
         &.slick-prev {
             left: 40px;

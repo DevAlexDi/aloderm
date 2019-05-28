@@ -8,6 +8,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 767px){
+            display: block;
+        }
     }
 
     &__side {
@@ -21,12 +25,28 @@
             border-radius: 50px;
             display: flex;
 
+            @media (max-width: 1199px){
+                max-width: 400px;
+            }
+
+            @media (max-width: 991px){
+                max-width: 278px;
+            }
+
+            @media (max-width: 767px){
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
 
         }
 
         &--right {
             display: flex;
             justify-content: flex-end;
+
+            @media (max-width: 767px){
+                display: block;
+            }
         }
 
     }
@@ -34,6 +54,10 @@
     &__logo-wrapp {
         display: flex;
         align-items: center;
+
+        @media (max-width: 767px){
+            margin-bottom: 15px;
+        }
 
         .img-responsive {
             flex-shrink: 0;
@@ -48,9 +72,17 @@
         white-space: nowrap;
         color: #000;
         line-height: 20px;
+
+        @media (max-width: 991px){
+            font-size: 18px;
+        }
         span{
             font-size: 14px;
             font-family: $mus300;
+
+            @media (max-width: 991px){
+                font-size: 13px;
+            }
         }
     }
 
@@ -86,10 +118,19 @@
         line-height: 17px;
         color: #fff;
         padding: 7px 32px;
+
+        @media (max-width: 991px){
+            padding: 7px 20px;
+        }
     }
 
     &__tel {
         font-size: 24px;
         line-height: 29px;
+
+        @media (max-width: 991px){
+            font-size: 20px;
+            line-height: 26px;
+        }
     }
 }

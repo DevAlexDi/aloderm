@@ -8,11 +8,34 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 991px){
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 767px){
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
     }
 
     &__text {
         font-size: 14px;
         line-height: 17px;
+
+        @media (max-width: 1199px){
+            font-size: 13px;
+        }
+
+        @media (max-width: 1199px){
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 767px){
+            margin-bottom: 7px;
+        }
     }
 
     &__link {
@@ -21,5 +44,16 @@
         text-decoration: none;
         border-bottom: 1px solid #000;
         color: #000000;
+
+        transition: 0.3s;
+
+        &:hover {
+            color: #3DAFCC;
+            border-color: #3DAFCC;
+        }
+
+        @media (max-width: 767px){
+            margin-bottom: 7px;
+        }
     }
 }
