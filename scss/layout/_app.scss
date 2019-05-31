@@ -29,7 +29,8 @@ a:focus{
 .navbar-toggle {
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -45px;
+    z-index: 20;
     float: none;
     .icon-bar {
         background: #000;

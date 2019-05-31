@@ -4,6 +4,10 @@
     padding: 16px 0 12px;
     background: #fff;
 
+    @media (max-width: 767px){
+        padding-bottom: 0;
+    }
+
     &__flex {
         display: flex;
         align-items: center;
@@ -17,6 +21,10 @@
     &__side {
         width: 100%;
         max-width: 207px;
+
+        @media (max-width: 767px){
+            max-width: 100%;
+        }
         
 
         &--mid {
@@ -45,7 +53,7 @@
             justify-content: flex-end;
 
             @media (max-width: 767px){
-                display: block;
+                display: none;
             }
         }
 
@@ -76,12 +84,20 @@
         @media (max-width: 991px){
             font-size: 18px;
         }
+        @media (max-width: 767px){
+            font-size: 24px;
+            line-height: 23px;
+        }
         span{
             font-size: 14px;
             font-family: $mus300;
 
             @media (max-width: 991px){
                 font-size: 13px;
+            }
+
+            @media (max-width: 767px){
+                font-size: 18px;
             }
         }
     }

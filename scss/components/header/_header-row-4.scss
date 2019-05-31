@@ -18,8 +18,50 @@
       position: fixed;
       top: 0;
 
+
+      .header-row-4__scrolled-block{
+         display: block;
+      }
+   }
+
+   &__scrolled-block {
+      display: none;
+      border-bottom: 1px solid #F2F2F2;
+      padding: 7px 0;
+
       @media (max-width: 767px){
-         position: relative;
+         display: block;
+         border: none;
+      }
+   }
+
+   &__hidden-wr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 767px){
+         display: block;
+      }
+   }
+
+   &__side {
+      width: 210px;
+      display: flex;
+      justify-content: flex-end;
+
+      @media (max-width: 767px){
+         display: block;
+         width: auto;
+      }
+
+      &--mid {
+         display: block;
+         width: auto;
+         flex-shrink: 0;
+
+         @media (max-width: 767px){
+            display: none;
+         }
       }
    }
 }
